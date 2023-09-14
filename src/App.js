@@ -2,15 +2,17 @@ import "./App.css";
 import HomePage from "./Components/HomePage";
 import LoginPage from "./Components/LoginPage";
 import { Route, Routes } from "react-router-dom";
-import ImportFromFileBody from "./Components/ImportFromFileBody";
+import ReactLogo from "./logo.svg";
+//import ImportFromFileBody from "./Components/ImportFromFileBody";
 
 function App() {
   return (
     <div className="App">
-      <h1>Blona</h1>
+      <img src={ReactLogo} alt="React Logo" width="1500px" />
+
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/path" element={<ImportFromFileBody />} />
+
         <Route path="/home" element={<HomePage />} />
       </Routes>
     </div>

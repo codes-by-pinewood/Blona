@@ -98,6 +98,7 @@ function HomePage() {
       <h2> Upload Files</h2>
 
       <input
+        class="custom-file-upload"
         onChange={(e) => {
           setNewFile(e.target.files[0]);
         }}
@@ -118,7 +119,13 @@ function HomePage() {
             <li key={file.id}>
               {" "}
               {file.value}{" "}
-              <button onClick={() => deleteFile(file.id)}> ❌ </button>
+              <button
+                className="deletebutton"
+                onClick={() => deleteFile(file.id)}
+              >
+                {" "}
+                ✗{" "}
+              </button>
             </li>
           );
         })}
@@ -128,15 +135,17 @@ function HomePage() {
         Extract
       </button>
 
-      {displayExtract ? (
-        <span className="parsedtext">
-          {parsedText.map((parsedText) => {
-            return <li key={parsedText.id}> {parsedText.value} </li>;
-          })}
-        </span>
-      ) : (
-        <span></span>
-      )}
+      <div className="parseddiv">
+        {displayExtract ? (
+          <span className="parsedtext">
+            {parsedText.map((parsedText) => {
+              return <li key={parsedText.id}> {parsedText.value} </li>;
+            })}
+          </span>
+        ) : (
+          <span></span>
+        )}
+      </div>
     </div>
   );
 }
