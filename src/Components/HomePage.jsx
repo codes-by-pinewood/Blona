@@ -21,9 +21,7 @@ function HomePage() {
       return;
     }
 
-    //  console.log(newFile.name);
-
-    //if file exists
+    //if file exists, create a var called file and add it to list of files
 
     const file = {
       id: Math.floor(Math.random() * 1000),
@@ -35,10 +33,12 @@ function HomePage() {
 
     console.log(files);
 
+    //create a new form data variable to push to server side
     const fd = new FormData();
     fd.append("file", newFile);
 
     setMsg("Uploading...");
+
     //change status to started = true
     setProgress((prevState) => {
       return { ...prevState, started: true };
@@ -78,18 +78,22 @@ function HomePage() {
     const content = fileReader.result;
     console.log(content);
 
+    //create parsedText as variable
     const parsedText = {
       id: Math.floor(Math.random() * 1000),
       value: content,
     };
 
+    //add parsed text to parsed text
     setParsedText((oldList) => [parsedText]);
   }
 
   function deleteFile(id) {
     console.log(id);
+    //check if file.id is the same as id of file deleted
     const newArray = files.filter((file) => file.id !== id);
     setFiles(newArray);
+    //empty parsed text
     setParsedText([]);
   }
 

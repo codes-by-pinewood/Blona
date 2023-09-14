@@ -44,7 +44,7 @@ const LoginPage = () => {
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
         setIsSubmitted(true);
-        console.log("it works");
+        // navigate to home page if login data is correct
         navigate("/home");
       }
     } else {
