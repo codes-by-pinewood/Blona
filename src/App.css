@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.input-container {
+  font-size: 3rem;
+}
+
+.extract {
+  background-color: rgb(171, 168, 247);
+}
+h1 {
+  font-size: 12rem;
+}
+h2 {
+  font-size: 5rem;
+}
+
+.comments {
+  font-size: 3rem;
+  display: block;
+}
+
+.filelist {
+  font-size: 3rem;
+}
+
+.parsedtext {
+  font-size: 1.5rem;
+  color: black;
+  text-align: left;
+  /*display: inline-block; */
+  display: inline;
+  width: 20px;
+}
+
+input {
+  font-size: 3rem;
+  border-width: 0px;
+}
+
+button {
+  font-size: 3rem;
+  background-color: rgb(91, 85, 245);
+  padding: 15px;
+  border-width: 0px;
+}
+body {
+  color: rgb(91, 85, 245);
+  padding: 40px;
+  background-color: white;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
