@@ -1,6 +1,6 @@
 # Coding Challenge  
-This challenge is on purpose quite open-ended, just as working in an early-stage start-up is 🚀 
-The Challenge 🧗🏽‍♀️
+This challenge is on purpose quite open-ended, just as working in an early-stage start-up is 🚀 \
+The Challenge 🧗🏽‍♀️ \
 The challenge consists of 3 sub-tasks that should be completed in order to reach the final product.
 ## Task 1: User-Login Page
 Users should only be able to log in with the following credentials:
@@ -9,8 +9,8 @@ Password: ToTheSky
 
 ## Task 2: PDF Uploader
 You are tasked with building a (very basic) website where (a logged-in) user can: 
-1. Upload new PDFs \
-2. See the PDFs they have previously uploaded \
+1. Upload new PDFs 
+2. See the PDFs they have previously uploaded 
 3. Delete previously uploaded PDFs 
 
 ## Task 3: Text Parser
